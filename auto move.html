@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="1dc73ce6974946188b0dc370b433145c.jpg" id="i" style="left: 300px;position: relative;top: 0px ">
+<script>
+    setInterval(() => {
+        document.getElementById('i').style.left = parseInt(document.getElementById('i').style.left) + 10 + 'px'
+        if (parseInt(document.getElementById('i').style.left) >= window.innerWidth) {
+            document.getElementById('i').style.left = '0px'
+        }
+    }, 10)
+
+
+</script>
+
+</body>
+</html>

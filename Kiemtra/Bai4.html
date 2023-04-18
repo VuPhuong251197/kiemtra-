@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p> Nhập tuổi </p><input type="text" id = tuoi>
+    <button onclick="kq()"> Kết quả </button>
+    <p id="b"></p>
+    <script>
+      function kq () {
+        let a = document.getElementById('tuoi').value
+        if (a > 100) {
+          document.getElementById('b').innerHTML = 'Trường thọ'
+        }
+      }
+    </script>
+</body>
+</html>

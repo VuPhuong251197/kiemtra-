@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 7 </title>
+</head>
+<body>
+  <h2> Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho </h2>
+  <input type="text" id="a">
+  <button onclick="tinhtien()"> Cước điện thoại </button>
+    <p id="kq"></p>
+    <script>
+        function tinhtien () {
+            let m;
+           let p = document.getElementById('a').value
+            if ( p < 50 ) {
+                m = p * 800;
+            }
+            else if ( p > 50 && p < 100 ) {
+                m = p * 1000;
+            }
+            else {
+                m = p * 2000
+            }
+            document.getElementById('kq').innerHTML=m
+        }
+    </script>
+</body>
+</html>

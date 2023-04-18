@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 11 </title>
+</head>
+<body>
+  <h2> Bài 11: Viết chương trình tính thuế thu nhập cá nhân. </h2>
+  <p> Thu nhập chịu thuế </p><input type="text" id="nhapvao">
+  <button onclick="tinhtoan ()"> Kết quả </button>
+  <p id="kq"></p>
+  <script>
+    function tinhtoan () {
+      let ketqua = 0
+      let a = document.getElementById('nhapvao').value
+      if ( a > 5000000 ){
+        ketqua = a * 5 / 100
+      }
+      if ( a > 5000000 && a < 10000000 ) {
+        ketqua = a * 10 / 100
+      }
+      if ( a > 10000000 && a < 20000000 ) {
+        ketqua = a * 15 / 100
+      }
+      if ( a > 20000000 && a < 40000000 ) {
+        ketqua = a * 20 / 100
+      }
+      if ( a > 30000000 && a < 60000000 ) {
+        ketqua = a * 25 / 100
+      }
+      if ( a > 50000000 && a <= 80000000 ) {
+        ketqua = a * 30 / 100
+      }
+      if ( a > 80000000 ) {
+        ketqua = a * 35 / 100
+      }
+      document.getElementById('kq').innerHTML = " Số thuế cá nhân là " + ketqua
+    }
+  </script>
+</body>
+</html>

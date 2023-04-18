@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May tinh</title>
+</head>
+<body>
+    <input type="text" id="txt1">
+    <input type="text" id="txt2">
+    <button onclick="Tinhtong()">Cộng</button>
+    <button onclick="Tinhhieu()">Trừ</button>
+    <button onclick="Tinhtich()">Nhân</button>
+    <button onclick="Tinhthuong()">Chia</button>
+<h1 id="KQ">Ket qua =</h1>
+<script>
+    function Tinhtong() {
+        let st1 = +document.getElementById('txt1').value ;
+        let st2 = +document.getElementById('txt2').value ;
+        document.getElementById('KQ').innerHTML='Tong 2 so la ' + (st1+st2);
+    }
+    function Tinhhieu() {
+        let st1 = +document.getElementById('txt1').value ;
+        let st2 = +document.getElementById('txt2').value ;
+        document.getElementById('KQ').innerHTML='Tong 2 so la ' + (st1-st2);
+    }
+    function Tinhtich() {
+        let st1 = +document.getElementById('txt1').value ;
+        let st2 = +document.getElementById('txt2').value ;
+        document.getElementById('KQ').innerHTML='Tong 2 so la ' + (st1*st2);
+    }
+    function Tinhthuong() {
+        let st1 = +document.getElementById('txt1').value;
+        let st2 = +document.getElementById('txt2').value;
+        document.getElementById('KQ').innerHTML = 'Tong 2 so la ' + (st1 / st2);
+    }
+</script>
+</body>
+</html>

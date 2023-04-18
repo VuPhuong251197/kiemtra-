@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Do you love me </title>
+</head>
+<body>
+  <h2> Do you love me </h2>
+  <button onclick="hienthitraitim()" id="yes"> Yes </button>
+  <button onmouseover="divao ()" id="no" style="position:absolute"> No </button>
+  <script>
+    function hienthitraitim () {
+      alert( 'yes' )
+    }
+    function divao () {
+      let randomWidth = Math.random() * window.innerWidth;
+      let randomHeight = Math.random() * window.innerHeight;
+      let ButtonNo = document.getElementById('no');
+      ButtonNo.style.left = randomWidth + "px";
+      ButtonNo.style.top = randomHeight + "px";
+    }
+  </script>
+</body>
+</html>

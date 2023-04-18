@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 6 </title>
+</head>
+<body>
+  <h2> Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng </h2>
+  <input type="text" id="a">
+  <button onclick="hoahong ()"> Mức hoa hồng nhận được </button>
+  <p id="b"></p>
+  <script>
+    function hoahong () {
+      let ketqua = 0
+      let a = document.getElementById('a').value
+      if ( a <= 50 ) {
+        ketqua = a * 5 / 100
+        document.getElementById('b').innerHTML=" Số hoa hồng nhận được là " + ketqua
+      }
+      if ( a < 70 ) {
+        ketqua = a * 7 / 100
+        document.getElementById('b').innerHTML=" Số hoa hồng nhận được là " + ketqua
+      }
+      if ( a >= 100 ) {
+        ketqua = a * 10 / 100
+        document.getElementById('b').innerHTML=" Số hoa hồng nhận được là " + ketqua
+      }
+    }
+  </script>
+</body>
+</html>

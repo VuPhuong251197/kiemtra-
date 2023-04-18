@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = [4, 6, 2, 1, 7, 10, 9, 4, 4, 8];
+        // - Tính trước kết quả
+        // - Viết ra các bước làm
+
+        // Scope: { } (function, if, switch-case, for, do-while, while
+        function getProductNumber(orgArr) {
+            // Tạo number
+            let prod = 1
+            // tạo vòng lặp for
+            for (let i = 0; i < orgArr.length; i++) {
+                if (orgArr[i] % 2 !== 0) {
+                    prod *= orgArr[i]
+                }
+            }
+         return prod
+        }
+        let result = getProductNumber(arr); //63
+        document.write(result);
+    </script>
+</body>
+</html>

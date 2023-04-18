@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <img src="mlbb-new-logo-concept-thumbnail.jpg" id="i" style="left: 200px;top: 0px;position: absolute;width: 200px;height: 150px ">
+  <script>
+      let speedX = 10
+      setInterval(() => {
+          document.getElementById('i').style.left = parseInt(document.getElementById('i').style.left) + speedX + 'px';
+          if (parseInt(document.getElementById('i').style.left) >= window.innerWidth || parseInt(document.getElementById('i').style.left) <= 0) {
+              speedX = -speedX;
+          }
+      }, 10)
+  </script>
+
+</body>
+</html>

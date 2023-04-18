@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+      let a = prompt('Nhập số')
+      let b = prompt('Nhập số')
+      if (a > b) {
+        document.write(a*b)
+      }
+      else if (b > a) {
+        let tich = 1
+        for (let i = a;i < b;i ++) {
+          tich *= i
+        }
+        document.write(tich)
+      }
+    </script>
+</body>
+</html>

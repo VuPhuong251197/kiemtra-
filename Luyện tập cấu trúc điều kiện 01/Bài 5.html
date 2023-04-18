@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 5 </title>
+</head>
+<body>
+  <h2> Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ </h2>
+  <input type="text" id="diem">
+  <button onclick="tinhdiem ()"> Xếp Hạng Học Lực </button>
+  <p id="b"></p>
+  <script>
+    function tinhdiem () {
+      let a = document.getElementById('diem').value
+      if (a < 5 ) {
+        document.getElementById('b').innerHTML=" Học Lực Yếu "
+      }
+      if (5 < a && a < 8 ) {
+        document.getElementById('b').innerHTML=" Học Lực Khá "
+      }
+      if ( a >= 8 ) {
+        document.getElementById('b').innerHTML=" Học Lực Giỏi "
+      }
+    }
+  </script>
+</body>
+</html>

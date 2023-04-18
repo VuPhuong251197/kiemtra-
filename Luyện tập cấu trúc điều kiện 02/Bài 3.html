@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 3 </title>
+</head>
+<body>
+  <h2> Bài 3: Tính diện tích hình vuông khi biết cạnh a. </h2>
+    <input type="text" id="nhapvao">
+    <button onclick="clickBtn ()"> Kết quả </button>
+    <p id="kq"></p>
+    <script>
+        function clickBtn () {
+            let a = document.getElementById('nhapvao').value
+            let S = a * a
+            document.getElementById('kq').innerHTML = " Diện tích hình vuông là " + S
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <img src="1dc73ce6974946188b0dc370b433145c.jpg" id="i" style="left: 300px;position: relative;top: 0px ">
+  <script>
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'd') {
+        document.getElementById('i').style.left = parseInt(document.getElementById('i').style.left) + 10 + 'px'
+      }
+      if (e.key === 'a') {
+        document.getElementById('i').style.left = parseInt(document.getElementById('i').style.left) - 10 + 'px'
+      }
+      if (e.key === 's') {
+        document.getElementById('i').style.top = parseInt(document.getElementById('i').style.top) + 10 + 'px'
+      }
+      if (e.key === 'w') {
+          document.getElementById('i').style.top = parseInt(document.getElementById('i').style.top) - 10 + 'px'
+      }
+    })
+
+  </script>
+</body>
+</html>

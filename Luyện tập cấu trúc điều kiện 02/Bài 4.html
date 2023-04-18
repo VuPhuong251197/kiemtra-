@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 4 </title>
+</head>
+<body>
+    <h2> Bài 4: Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b. </h2>
+    <input type="text" id="nhapvao">
+    <input type="text" id="b">
+    <button onclick="ketqua ()"> Kết quả </button>
+    <p id="kq"></p>
+<script>
+    function ketqua () {
+        let a = document.getElementById('nhapvao').value
+        let b = document.getElementById('b').value
+        let S = a * b
+        document.getElementById('kq').innerHTML = " Diện tích hình chữ nhật là " S
+    }
+</script>
+</body>
+</html>

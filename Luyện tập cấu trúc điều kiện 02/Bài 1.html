@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 1 </title>
+</head>
+<body>
+  <h2> Bài 1: Chuyển từ độ C sang độ F. </h2>
+  <table>
+    <tr>
+      <td>
+          <p> Nhập nhiệt độ </p>
+          <input type="text" id="scr">
+      </td>
+        <td>
+            <p> Chuyển đổi </p>
+            <select name="" id="y">
+                <option value="a"> Độ C </option>
+                <option value="b"> Độ F </option>
+            </select>
+        </td>
+        <td>
+            <p> Chuyển đổi </p>
+            <select name="" id="z">
+                <option value="b"> Độ F </option>
+                <option value="a"> Độ C </option>
+            </select>
+        </td>
+        <td>
+            <button onclick="chuyendoi ()"> Chuyển đổi </button>
+        </td>
+    </tr>
+  </table>
+    <p id="kq"></p>
+<script>
+    function chuyendoi () {
+        let x = document.getElementById('scr').value
+        let y = document.getElementById('y').value
+        let z = document.getElementById('z').value
+        if (y === "a" && z === "b") {
+            document.getElementById('kq').innerHTML= (x * 9/5 ) + 32
+        }
+        if (y === "b" && z === "a") {
+            document.getElementById('kq').innerHTML= 5/9 * ( x - 32 )
+        }
+    }
+</script>
+</body>
+</html>

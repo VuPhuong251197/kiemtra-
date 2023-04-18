@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 8 </title>
+</head>
+<body>
+  <h2> Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không. Một số nguyên là tuổi của một người khi nhỏ 120 và lớn hơn 0. </h2>
+  <p> Nhập tuổi </p><input type="text" id="age">
+  <button onclick="nhapvao ()"> Kết quả </button>
+  <p id="kq"></p>
+  <script>
+    function nhapvao () {
+      let a = document.getElementById('age').value
+      if ( a >= 0 && a < 120 ) {
+        document.getElementById('kq').innerHTML = " Đây là tuổi hợp lệ "
+      }
+      else {
+        document.getElementById('kq').innerHTML = " Đây không phải là tuổi hợp lệ "
+      }
+    }
+  </script>
+</body>
+</html>

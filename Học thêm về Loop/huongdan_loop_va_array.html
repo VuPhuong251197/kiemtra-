@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // Yêu cầu: viết 1 function, tính tổng tất cả phần tử trong array cho trước.
+        function getSum(originalArray) {
+            // originalArray [1, 3, 5, 2, 44, 10, 4, 24]
+
+            //1. tạo number
+            let sum = 0
+            //2. dùng vòng lặp
+            for (let i = 0; i < originalArray.length; i++) { // originalArray.length === 8 | i < 8
+                sum += originalArray[i]
+                // i = 0 ==> sum + originalArray[0] ==> sum + 1 ==> 0 + 1 ==> sum === 1
+                // i = 1 ==> sum + originalArray[1] ==> sum + 3 ==> 1 + 3 ==> sum === 4
+                // i = 2 ==> sum + originalArray[2] ==> sum + 5 ==> 4 + 5 ==> sum === 9
+                // i = 3 ==> sum + originalArray[3] ==> sum + 2 ==> 9 + 2 ==> sum === 11
+                // i = 4 ==> sum + originalArray[4] ==> sum + 44 ==> 11 + 44 ==> sum === 55
+                // i = 5 ==> sum + originalArray[5] ==> sum + 10 ==> 55 + 10 ==> sum === 65
+                // i = 6 ==> sum + originalArray[6] ==> sum + 4 ==> 65 + 4 ==> sum === 69
+                // i = 7 ==> sum + originalArray[7] ==> sum + 24 ==> 69 + 24 ==> sum === 93
+                // i = 8 (Không còn thỏa mãn i < 8 nữa, vì i === 8)
+            }
+
+            console.log(sum) // 93
+
+            return sum // 93
+        }
+        // ==========================================================================
+        let arr = [1, 3, 5, 2, 44, 10, 4, 24];
+        let result = getSum(arr); // 93
+        document.write(result); // in ra số 93 ra màn hình
+
+        /**
+         * Lưu ý:
+         * - số thứ tự của Array không phải bắt đầu từ 1 mà là 0
+         * - để lấy ra chiều dài của Array (số phần tử trong array) thì là *tên array*.length
+         * - để lấy ra phần tử cuối cùng, sử dụng *tên array*.length - 1 (vì số thứ tự bắt đầu từ 0)
+         * - để duyệt qua array, for (let i = 0; i < *tên array*.length; i++)
+         * - Muốn log ra kết quả sau cùng thì không log trong for
+         * - Nếu muốn log ra kết quả của từng phần tử thì mới log trong for
+         * */
+
+        /**
+         * Giả sử có số a, đây là cách để biết được số a này là số chẵn hay số lẻ
+         * (a % 2 === 0) // chia hết cho 2 ==> số chẵn
+         * (a % 2 !== 0) // không chia hết cho 2 ==> số lẻ
+         * */
+    </script>
+
+</body>
+</html>

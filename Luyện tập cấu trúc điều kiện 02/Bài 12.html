@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 12 </title>
+</head>
+<body>
+    <h2> Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng. </h2>
+    <p> Số tiền ban đầu </p><input type="text" id="a">
+    <p> Số tháng cho vay </p><input type="text" id="b">
+    <p> Lãi suất hàng tháng </p><input type="text" id="c">
+    <button onclick="tinhlai ()"> Kết quả </button>
+    <p id="kq"></p>
+    <script>
+        function tinhlai () {
+            let a = +document.getElementById('a').value
+            let b = +document.getElementById('b').value
+            let c = +document.getElementById('c').value
+            document.getElementById('kq').innerHTML = a*((1+c/100)**b)
+        }
+    </script>
+</body>
+</html>

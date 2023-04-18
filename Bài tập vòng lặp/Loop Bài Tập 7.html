@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> In ra các tu a đến b số chẵn trong h2, so le trong h1; </title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập số:')
+    let b = prompt('Nhập số:')
+    for (let i = a; i < b; i++ ) {
+        if (i%2 === 0) {
+            document.write('<h1>' + i + '</h1>')
+        }
+        else {
+            document.write('<h2>' + i + '</h2>')
+        }
+    }
+</script>
+</body>
+</html>

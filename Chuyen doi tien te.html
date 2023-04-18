@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền tệ</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <h3>Amount</h3>
+            <input type="text" id="scr">
+        </td>
+        <td>
+            <h3>From Currency</h3>
+            <select name="" id="y">
+                <option value="a">VND</option>
+                <option value="b">USD</option>
+            </select>
+        </td>
+        <td>
+            <h3>To Currency</h3>
+            <select name="" id="z">
+                <option value="b">USD</option>
+                <option value="a">VND</option>
+            </select>
+        </td>
+        <td>
+            <button onclick="convert()">Convert</button>
+        </td>
+    </tr>
+</table>
+<h1 id="kq"></h1>
+<script>
+    function convert () {
+       let x = document.getElementById('scr').value;
+       document.getElementById('kq').innerHTML = x
+        let y = document.getElementById('y').value;
+       let z = document.getElementById('z').value;
+       if (y == z) {
+           alert(x);
+       }
+       if (y == 'a' && z == 'b') {
+           alert(x/24000)
+        }
+    }
+</script>
+
+
+</body>
+</html>

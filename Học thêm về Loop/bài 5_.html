@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let stringArr = ["tyytj","dfg","xcvxcv","rytr","ghjghj","ádasdasd"];
+        // cả array (mảng) và string (chuỗi) đều có thuộc tính length (độ dài)
+        function getStringArrLength(stringArray) {
+            let newArray = []
+
+            // 1. Vì function này sẽ return 1 array, mình cần tạo array mới ở bên ngoài vòng lặp mà không có phần tử nào cả
+
+            // 2. Dùng vòng lặp, chạy qua cả array (stringArray)
+            for (let i= 0;i < stringArray.length;i++) {
+                console.log(stringArray[i].length)
+                newArray[i]=stringArray[i].length
+            }
+            return newArray
+
+                // 3. Khi đang chạy qua cả array, mình đang làm việc với từng phần tử trong array. (stringArray[i])
+                // 4. Để lấy ra được độ dài của từng phần tử chuỗi trong stringArray thì mình phải sử dụng .length (length là một property của string trả về độ dài array)
+                // 5. Thêm độ dài vào array mới
+
+            // Trả đầu ra cho function
+        }
+        let result = getStringArrLength(stringArr); // [5, 3, 6, 4, 6, 8]
+        document.write(result);
+    </script>
+</body>
+</html>

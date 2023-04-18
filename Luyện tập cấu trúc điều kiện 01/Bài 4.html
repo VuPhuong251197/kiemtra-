@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 4 </title>
+</head>
+<body>
+<h2> Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó </h2>
+<input type="text" id="a">
+<input type="text" id="b">
+<input type="text" id="c">
+<button onclick="giatri ()">Tìm giá trị</button>
+<p id="d"></p>
+<script>
+    function giatri() {
+        let a = document.getElementById('a').value
+        let b = document.getElementById('b').value
+        let c = document.getElementById('c').value
+        if (a >= b && a >= c) {
+            document.getElementById('d').innerHTML=" a là số lớn nhất "
+        }
+        else if (b >= a && b >= c) {
+            document.getElementById('d').innerHTML=" b là số lớn nhất "
+        }
+        else if (c >= a && c >= b ) {
+            document.getElementById('d').innerHTML=" c là số lớn nhất "
+        }
+    }
+</script>
+</body>
+</html>
